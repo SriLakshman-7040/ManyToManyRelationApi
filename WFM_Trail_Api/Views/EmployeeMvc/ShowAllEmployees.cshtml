@@ -1,0 +1,91 @@
+﻿@model IEnumerable<WFM_Trail_Api.Models.EmployeesWithSkills>
+
+@{
+    ViewData["Title"] = "Employees List";
+}
+
+<h1>Employees List</h1>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse:collapse;
+}
+</style>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Manager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wfm_Manager)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LockStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Experience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Skills)
+            </th>
+            <th>
+                @Html.DisplayName("Actions")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @item.Name
+            </td>
+            <td>
+                @item.Status
+            </td>
+            <td>
+                @item.Manager
+            </td>
+            <td>
+                @item.Wfm_Manager
+            </td>
+            <td>
+                @item.Email
+            </td>
+            <td>
+                @item.LockStatus
+            </td>
+            <td>
+                @item.Experience
+            </td>
+            <td>
+                <ul style="float:left;padding:3px;background-color:grey;margin-left:5px;list-style-type:none">
+                    @foreach(var skill in item.Skills)
+                    {
+                        <li>@skill</li>
+                    }
+                </ul>
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.EmployeeId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.EmployeeId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.EmployeeId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

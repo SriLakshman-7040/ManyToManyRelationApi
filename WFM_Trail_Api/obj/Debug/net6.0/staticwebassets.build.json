@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "oG/Te1LjSXyZWHaXJu10nE4rOM3s6I7jjfxxzUWH80M=",
+  "Source": "WFM_Trail_Api",
+  "BasePath": "_content/WFM_Trail_Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WFM_Trail_Api\\wwwroot",
+      "Source": "WFM_Trail_Api",
+      "ContentRoot": "D:\\SofturaTrainingStuff\\WorkForceManagement_Trail\\WFM_Trail_Api\\WFM_Trail_Api\\wwwroot\\",
+      "BasePath": "_content/WFM_Trail_Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\SofturaTrainingStuff\\WorkForceManagement_Trail\\WFM_Trail_Api\\WFM_Trail_Api\\wwwroot\\lib\\js\\EmployeeDetails.js",
+      "SourceId": "WFM_Trail_Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SofturaTrainingStuff\\WorkForceManagement_Trail\\WFM_Trail_Api\\WFM_Trail_Api\\wwwroot\\",
+      "BasePath": "_content/WFM_Trail_Api",
+      "RelativePath": "lib/js/EmployeeDetails.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\js\\EmployeeDetails.js"
+    }
+  ]
+}
